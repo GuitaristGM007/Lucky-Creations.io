@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Lucky Creations: Home Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./Media/2 Letters.png">
+    <link rel = "stylesheet" type = "text/css" href = "CSS Files/everywhere.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "CSS Files/header.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "CSS Files/delivery.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "CSS Files/index.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "CSS Files/products.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="header"> <!--Beginning of the header-->
+        <div class="left-section">
+<div class="hamburger-icon-container">
+  <img class="hamburger-icon" alt="toggle-icon" src="/Media/hamburger-icon.png" onclick="toggleMenu()">
+</div>
+
+  <div class="header-logo-container">
+    <a href="/index.html">
+      <img class="header-logo" alt="the-logo" src="/Media/Upscale.png">
+    </a>
+  </div>
+</div>
+
+        <div class="middle-section">
+            <div class="page-title-container">
+                <hr class="top-line"> <!-- Top line -->
+                <div class="page-title">
+                    Home Page
+                </div>
+                <hr class="bottom-line"> <!-- Bottom line -->
+            </div>
+        </div>
+        
+        <div class="right-section">
+            Complete <br> Catalogue
+        </div>
+    </div> <!--Ending of the header-->
+
+    <div id="dropdown-menu" class="dropdown hidden">
+        <a href="HTML Files/aboutUs.html">About Us</a>
+        <a href="HTML Files/contact.html">Contact Us</a>
+    </div>
+
+    <div id="backdrop" class="backdrop hidden" onclick="closeMenu()"></div>
+
+    <div class="delivery-bar"> <!--Beginning of the delivery bar-->
+        <marquee>
+            Pan-India Delivery Available. Contact &#9742; +91 8169341750 &#9679; &#9993;
+            <a href="mailto:luckycreations.crochet@gmail.com?subject=Inquiry%20About%20Catalogue">
+            luckycreations.crochet@gmail.com
+            </a>
+
+        </marquee>
+    </div> <!--Ending of the delivery bar-->
+
+    <div class="hero-image-container"> <!--Beginning of the hero image-->
+        <div class="hero-image-1">
+            <img rel="good-tp-top" src="Media/hero-1.png">
+        </div>
+        <div class="tagline">
+            <p>
+                Wear It, Style It, Flaunt It!
+            </p>
+        </div>
+        <div class="hero-image-2">
+            <img rel="good-tp-bottom" src="Media/hero-2.png">
+        </div>
+    </div> <!--Ending of the hero image-->
+
+    <div class="intro-line">
+        Showcasing Our Products Gallery :
+    </div>
+
+    <main class="products-category"></main>
+
+    <script>
+    fetch('/JSON Files/index.json')
+    .then(response => response.json())
+    .then(categories => {
+        const container = document.querySelector('.products-category');
+
+        categories.forEach(cat => {
+        const anchor = document.createElement('a');
+        anchor.href = cat.link;
+        anchor.rel = `to-${cat.class}`;
+
+        const card = document.createElement('div');
+        card.className = 'product-card';
+
+        card.innerHTML = `
+          <div class="product-title">${cat.title}</div>
+          <div class="product-image">
+          <img src="/Media/${cat.image}" rel="${cat.class}-hero-image" />
+          </div>
+          <div class="product-description">${cat.description}</div>
+        `;
+
+        anchor.appendChild(card);
+        container.appendChild(anchor);
+      });
+    })
+    .catch(error => console.error('Error loading categories:', error));
+    </script>
+
+    <script>
+    function toggleMenu() {
+    document.getElementById("dropdown-menu").classList.toggle("hidden");
+    document.getElementById("backdrop").classList.toggle("hidden");
+    }
+
+    function closeMenu() {
+        document.getElementById("dropdown-menu").classList.add("hidden");
+        document.getElementById("backdrop").classList.add("hidden");
+    }
+</script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+  import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+  import { getDatabase, ref, runTransaction, set } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAvWlnAUx3hFEkksLzvTTnUWsn90OVPqFI",
+    authDomain: "lph-server-website.firebaseapp.com",
+    databaseURL: "https://lph-server-website-default-rtdb.firebaseio.com",
+    projectId: "lph-server-website",
+    storageBucket: "lph-server-website.firebasestorage.app",
+    messagingSenderId: "200401032111",
+    appId: "1:200401032111:web:d0ccd06a0415e97657955a",
+    measurementId: "G-9B9SR4TZVY"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getDatabase(app);
+
+  logEvent(analytics, "site_visit", { source: "home_page" });
+
+  window.addEventListener("DOMContentLoaded", () => {
+  runTransaction(ref(db, "crochet_stats/crochet_visits"), n => (n || 0) + 1);
+});
+
+</script>
+
+
+</body>
+</html>
