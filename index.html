@@ -4,11 +4,11 @@
     <meta charset="utf-8"/>
     <title>Lucky Creations: Home Page</title>
     <link rel="shortcut icon" type="image/x-icon" href="./Media/2 Letters.png">
-    <link rel = "stylesheet" type = "text/css" href = "CSS Files/everywhere.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "CSS Files/header.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "CSS Files/delivery.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "CSS Files/index.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "CSS Files/products.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./CSS Files/everywhere.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./CSS Files/header.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./CSS Files/delivery.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./CSS Files/index.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "./CSS Files/products.css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,12 +17,12 @@
     <div class="header"> <!--Beginning of the header-->
         <div class="left-section">
 <div class="hamburger-icon-container">
-  <img class="hamburger-icon" alt="toggle-icon" src="Media/hamburger-icon.png" onclick="toggleMenu()">
+  <img class="hamburger-icon" alt="toggle-icon" src="./Media/hamburger-icon.png" onclick="toggleMenu()">
 </div>
 
   <div class="header-logo-container">
-    <a href="/index.html">
-      <img class="header-logo" alt="the-logo" src="Media/Upscale.png">
+    <a href="index.html">
+      <img class="header-logo" alt="the-logo" src="./Media/Upscale.png">
     </a>
   </div>
 </div>
@@ -61,7 +61,7 @@
 
     <div class="hero-image-container"> <!--Beginning of the hero image-->
         <div class="hero-image-1">
-            <img rel="good-tp-top" src="Media/hero-1.png">
+            <img alt="good-tp-top" src="Media/hero-1.png">
         </div>
         <div class="tagline">
             <p>
@@ -69,7 +69,7 @@
             </p>
         </div>
         <div class="hero-image-2">
-            <img rel="good-tp-bottom" src="Media/hero-2.png">
+            <img alt="good-tp-bottom" src="Media/hero-2.png">
         </div>
     </div> <!--Ending of the hero image-->
 
@@ -80,7 +80,7 @@
     <main class="products-category"></main>
 
     <script>
-    fetch('JSON Files/index.json')
+    fetch('./JSON Files/index.json')
     .then(response => response.json())
     .then(categories => {
         const container = document.querySelector('.products-category');
@@ -96,7 +96,7 @@
         card.innerHTML = `
           <div class="product-title">${cat.title}</div>
           <div class="product-image">
-          <img src="Media/${cat.image}" rel="${cat.class}-hero-image" />
+          <img src="./Media/${cat.image}" rel="${cat.class}-hero-image" />
           </div>
           <div class="product-description">${cat.description}</div>
         `;
