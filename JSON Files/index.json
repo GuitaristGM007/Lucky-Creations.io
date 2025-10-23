@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Keychains",
+    "image": "Keychain-Main.png",
+    "description": "The 'Master Key' to flaunt your keys",
+    "link": "HTML Files/keychains.html",
+    "class": "keychains"
+  },
+  {
+    "title": "Hair Scrunchies",
+    "image": "Scrunchie-Main.png",
+    "description": "Tie your hair with style & flair <br> (Customizable in colours)",
+    "link": "HTML Files/scrunchies.html",
+    "class": "scrunchies"
+  },
+  {
+    "title": "Earrings",
+    "image": "New Purple.png",
+    "description": "Take advantage of your ear piercing",
+    "link": "HTML Files/earrings.html",
+    "class": "earrings"
+  },
+  {
+    "title": "Centerpieces",
+    "image": "Thaalposh-Main.png",
+    "description": "Shelf or vase, style with class",
+    "link": "HTML Files/thaalposh.html",
+    "class": "thaalposh"
+  },  
+  {
+    "title": "Doilies",
+    "image": "Doily-Main.png",
+    "description": "Masterpieces for your showpieces",
+    "link": "HTML Files/doilies.html",
+    "class": "doilies"
+  },  
+  {
+    "title": "Mini Bags & Pouches",
+    "image": "Mini Bag.png",
+    "description": "Travel light, travel far",
+    "link": "HTML Files/miniBags.html",
+    "class": "mini-bags"
+  }, 
+  {
+    "title": "Coaster Sets",
+    "image": "Coaster-Main.png",
+    "description": "Drink to the nines, on packs of 2 & 4",
+    "link": "HTML Files/coasterSets.html",
+    "class": "coaster-sets"
+  },  
+  {
+    "title": "Handkerchiefs",
+    "image": "Chief-Main.jpeg",
+    "description": "Lacy, trendy, always handy",
+    "link": "HTML Files/handkerchiefs.html",
+    "class": "handkerchiefs"
+  },  
+  {
+    "title": "Phone Pouches",
+    "image": "Phone-Pouch-Main.png",
+    "description": "For secrets, too big for pockets",
+    "link": "HTML Files/phonePouches.html",
+    "class": "phone-pouches"
+  }
+]
