@@ -239,7 +239,7 @@ a, a * {
   }
 }
 
-@media (max-width: 714px) {
+@media (max-width: 713px) {
   .hero-image-container {
     margin-top: -10px;
     margin-bottom: -10px;
