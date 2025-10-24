@@ -202,7 +202,6 @@
 .home-page-tooltip-container .home-page-tooltip {
     background-color: #f5efe1;
     color: #442a6e;
-    position: fixed;
     border-radius: 3px;
     font-size: 16px;
     font-weight: 500;
@@ -216,6 +215,16 @@
     transition: opacity 0.3s ease;
 
     pointer-events: none;
+}
+
+.hamburger-tooltip-container,
+.home-page-tooltip-container {
+  position: relative;
+}
+
+.hamburger-tooltip,
+.home-page-tooltip {
+  position: absolute; /* instead of fixed */
 }
 
 .home-page-tooltip-container:hover .home-page-tooltip{
