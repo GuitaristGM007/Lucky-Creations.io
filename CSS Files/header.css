@@ -433,7 +433,7 @@
     padding: 0;
   }
   .top-line {
-    margin-top: -3px;
+    margin-top: 0px;
   }
   .bottom-line {
     margin-bottom: 0px;
@@ -486,7 +486,7 @@
     margin-top: 0px;
   }
   .bottom-line {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .right-section {
