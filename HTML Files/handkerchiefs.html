@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>Lucky Creations: Handkerchiefs</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/Media/2 Letters.png">
-    <link rel = "stylesheet" type = "text/css" href = "/CSS Files/everywhere.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "/CSS Files/header.css"/>
-    <link rel = "stylesheet" type = "text/css" href = "/CSS Files/delivery.css"/>
-    <link rel="stylesheet" type="text/css" href="/CSS Files/products.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../Media/2 Letters.png">
+    <link rel="stylesheet" type="text/css" href="../CSS Files/everywhere.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS Files/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS Files/delivery.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS Files/products.css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,11 +16,11 @@
     <div class="header"> <!--Beginning of the header-->
         <div class="left-section">
 <div class="hamburger-icon-container">
-  <img class="hamburger-icon" alt="toggle-icon" src="/Media/hamburger-icon.png" onclick="toggleMenu()">
+  <img class="hamburger-icon" alt="toggle-icon" src="../Media/hamburger-icon.png" onclick="toggleMenu()">
 </div>
             <div class="header-logo-container">
-                <a rel="htmlpage" href="/index.html">
-                    <img class="header-logo" alt="the-logo" src="/Media/Upscale.png">
+                <a rel="website" href="https://guitaristgm007.github.io/Lucky-Creations.io/">
+                    <img class="header-logo" alt="the-logo" src="../Media/Upscale.png">
                 </a>
             </div>
         </div>
@@ -40,8 +40,8 @@
     </div> <!--Ending of the header-->
 
 <div id="dropdown-menu" class="dropdown hidden">
-  <a href="/HTML Files/aboutUs.html">About Us</a>
-  <a href="/HTML Files/contact.html">Contact Us</a>
+  <a href="../HTML Files/aboutUs.html">About Us</a>
+  <a href="../HTML Files/contact.html">Contact Us</a>
 </div>
 
 <div id="backdrop" class="backdrop hidden" onclick="closeMenu()"></div>
@@ -58,7 +58,7 @@
   <main id="product-container"></main>
 
    <script>
-fetch('/JSON Files/handkerchiefs.json')
+fetch('../JSON Files/handkerchiefs.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('product-container');
@@ -66,7 +66,7 @@ fetch('/JSON Files/handkerchiefs.json')
       const card = document.createElement('div');
       card.className = 'product-card';
       card.innerHTML = `
-        <img src="/Product Images/Handkerchiefs/${item.image}" alt="${item.name}">
+        <img src="../Product Images/Handkerchiefs/${item.image}" alt="${item.name}">
         <p><strong>Name:</strong> ${item.name}</p>
         <p><strong>Size:</strong> ${item.size}</p>
         <p><strong>Price:</strong> ${item.rate}</p>
