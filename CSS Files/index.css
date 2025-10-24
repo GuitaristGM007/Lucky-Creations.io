@@ -394,6 +394,34 @@ a, a * {
   }
 }
 
+@media (min-width: 321px) and (max-width: 327px) {
+  .products-category {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 12px 6px;
+  }
+
+  .product-card {
+    max-width: 140px;
+    min-height: 180px;
+    padding: 6px;
+  }
+
+  .product-image img {
+    height: 70px;
+  }
+
+  .product-title {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .product-description {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 321px) {
 .hero-image-container {
   padding-top: 0px;
