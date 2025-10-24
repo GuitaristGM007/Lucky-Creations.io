@@ -202,7 +202,7 @@
 .home-page-tooltip-container .home-page-tooltip {
     background-color: #f5efe1;
     color: #442a6e;
-    position: absolute;
+    position: fixed;
     border-radius: 3px;
     font-size: 16px;
     font-weight: 500;
@@ -272,7 +272,10 @@
     content: " ";
     display: block;
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     inset: 0 0 0 0;
     background: linear-gradient(to right, #442a6e, #a46e9d, #f5efe1, #a46e9d, #442a6e);
     z-index: -1;
@@ -347,6 +350,10 @@
     width: auto;
   }
 
+  .page-title-container {
+     height: 100px;
+  }
+
   .page-title {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -402,7 +409,11 @@
     max-width: 240px;
     width: auto;
     margin-left: -10px;
-    height: 60px;
+    height: 70px;
+  }
+
+  .page-title-container {
+     height: 70px;
   }
 
   .page-title {
@@ -432,7 +443,6 @@
     font-size: 20px;
     padding-left: 20px;
 }
-
 }
 
 @media (max-width: 528px) {
@@ -450,7 +460,11 @@
     max-width: 200px;
     width: auto;
     margin-left: -10px;
-    height: 60px;
+    height: 65px;
+  }
+
+  .page-title-container {
+     height: 65px;
   }
 
   .page-title {
@@ -504,6 +518,10 @@
     width: auto;
     margin-left: -10px;
     height: 55px;
+  }
+
+  .page-title-container {
+     height: 55px;
   }
 
   .page-title {
