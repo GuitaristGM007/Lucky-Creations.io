@@ -129,6 +129,18 @@
   color: #f7f7f2;
 }
 
+a {
+  text-decoration: none;
+}
+
+a * {
+  text-decoration: none;
+}
+
+a, a * {
+  text-decoration: none !important;
+  -webkit-text-decoration: none !important;
+}
 
 @media (min-width: 714px) and (max-width: 1024px) {
   .hero-image-container {
