@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .header {
     background-color: #442a6e;
     height: 100px;
@@ -41,28 +40,6 @@
 
 .hamburger-icon:hover {
     cursor: pointer;
-}
-
-.hamburger-tooltip-container .hamburger-tooltip {
-    background-color: #f5efe1;
-    color: #442a6e;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    bottom: -25px;
-    left: 7px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-    pointer-events: none;
-}
-
-.hamburger-tooltip-container:hover .hamburger-tooltip{
-    opacity: 1;
 }
 
 /* Style for the hamburger icon container */
@@ -197,38 +174,6 @@
 
 .header-logo:hover{
     cursor: pointer;
-}
-
-.home-page-tooltip-container .home-page-tooltip {
-    background-color: #f5efe1;
-    color: #442a6e;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    bottom: -25px;
-    left: 149px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-
-    pointer-events: none;
-}
-
-.hamburger-tooltip-container,
-.home-page-tooltip-container {
-  position: relative;
-}
-
-.hamburger-tooltip,
-.home-page-tooltip {
-  position: absolute; /* instead of fixed */
-}
-
-.home-page-tooltip-container:hover .home-page-tooltip{
-    opacity: 1;
 }
 
 .middle-section {
