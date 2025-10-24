@@ -54,14 +54,16 @@
 .product-card {
   width: 100%;
   max-width: 280px;
-  height: 400px;
+  /* height: 400px; */
+  height: 100%;
   background-color: #f7f7f2;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   position: relative;
@@ -93,12 +95,19 @@
 }
 
 .product-image {
-  width: 100%;
+  /* width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible; /* Prevent clipping */
+  overflow: visible; */
+
+  width: 100%;
+  max-height: 180px; /* or whatever fits your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* prevents image overflow */
 }
 
 .product-image img {
@@ -122,6 +131,12 @@
   text-align: center;
   margin-top: auto;
   line-height: 1.5;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* adjust line count as needed */
+  -webkit-box-orient: vertical;
 }
 
 .product-card:hover .product-description {
