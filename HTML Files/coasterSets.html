@@ -40,8 +40,8 @@
     </div> <!--Ending of the header-->
 
 <div id="dropdown-menu" class="dropdown hidden">
-  <a href="./HTML Files/aboutUs.html">About Us</a>
-  <a href="./HTML Files/contact.html">Contact Us</a>
+  <a href="../HTML Files/aboutUs.html">About Us</a>
+  <a href="../HTML Files/contact.html">Contact Us</a>
 </div>
 
 <div id="backdrop" class="backdrop hidden" onclick="closeMenu()"></div>
@@ -58,7 +58,7 @@
   <main id="product-container"></main>
 
    <script>
-fetch('/JSON Files/coaster.json')
+fetch('../JSON Files/coaster.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('product-container');
@@ -66,7 +66,7 @@ fetch('/JSON Files/coaster.json')
       const card = document.createElement('div');
       card.className = 'product-card';
       card.innerHTML = `
-        <img src="/Product Images/Coaster Sets/${item.image}" alt="${item.name}">
+        <img src="../Product Images/Coaster Sets/${item.image}" alt="${item.name}">
         <p><strong>Name:</strong> ${item.name}</p>
         <p><strong>Price:</strong> ${item.rate}</p>
         <p>Also Available In Pack of 4</p>
