@@ -174,7 +174,7 @@ a, a * {
   -webkit-text-decoration: none !important;
 }
 
-@media (min-width: 714px) and (max-width: 1024px) {
+@media (min-width: 713px) and (max-width: 1024px) {
   .hero-image-container {
     width: 100%;
     padding: 0 20px;
