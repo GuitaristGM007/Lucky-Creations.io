@@ -288,7 +288,7 @@ a, a * {
     max-width: 200px;
     padding: 10px;
 
-    min-height: 420px;
+    min-height: 240px;
   }
 
   .product-image img {
@@ -332,7 +332,7 @@ a, a * {
     max-width: 160px;
     padding: 8px;
     
-    min-height: 390px;
+    min-height: 200px;
   }
 
   .product-image img {
