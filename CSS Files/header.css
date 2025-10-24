@@ -411,6 +411,10 @@
     padding-bottom: 11px;
   }
 
+  .page-title::before {
+    height: 70px; /* or 50px, depending on visual balance */
+  }
+
   .top-line, .bottom-line {
     width: 220px;
     height: 12px;
@@ -452,6 +456,10 @@
   .page-title {
     padding-top: 4px;
     padding-bottom: 4px;
+  }
+
+  .page-title::before {
+    height: 65px; /* or 50px, depending on visual balance */
   }
 
   .top-line, .bottom-line {
@@ -502,6 +510,10 @@
     font-size: 15px;
     padding-top: 8.2px;
     padding-bottom: 8.2px;
+  }
+
+  .page-title::before {
+    height: 55px; /* or 50px, depending on visual balance */
   }
 
   .top-line, .bottom-line {
@@ -559,6 +571,10 @@
     font-size: 12px;
     padding-top: 7px;
     padding-bottom: 7px;
+  }
+
+  .page-title::before {
+    height: 45px; /* or 50px, depending on visual balance */
   }
 
   .top-line, .bottom-line {
