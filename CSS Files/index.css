@@ -366,7 +366,7 @@ a, a * {
   }
 } */
 
-@media (min-width: 321px) and (max-width: 351px) {
+@media (min-width: 322px) and (max-width: 359px) {
   .products-category {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 12px;
@@ -375,9 +375,8 @@ a, a * {
 
   .product-card {
     max-width: 150px;
-    padding: 8px;
-
     min-height: 165px;
+    padding: 8px;
   }
 
   .product-image img {
