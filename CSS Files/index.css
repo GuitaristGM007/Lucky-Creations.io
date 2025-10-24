@@ -360,6 +360,33 @@ a, a * {
   }
 }
 
+@media (min-width: 321px) and (max-width: 351px) {
+  .products-category {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 15px 8px;
+  }
+
+  .product-card {
+    max-width: 150px;
+    min-height: 220px;
+    padding: 8px;
+  }
+
+  .product-image img {
+    height: 75px;
+  }
+
+  .product-title {
+    font-size: 14px;
+  }
+
+  .product-description {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+}
+
 @media (max-width: 321px) {
 .hero-image-container {
   padding-top: 0px;
