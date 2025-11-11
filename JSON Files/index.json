@@ -9,7 +9,7 @@
   {
     "title": "Hair Scrunchies",
     "image": "Scrunchie-Main.png",
-    "description": "Tie your hair with style & flair <br> (Customizable in colours)",
+    "description": "Tie your hair with style & flair (Customizable in colours)",
     "link": "./HTML Files/scrunchies.html",
     "class": "scrunchies"
   },
@@ -36,7 +36,7 @@
   },  
   {
     "title": "Mini Bags & Pouches",
-    "image": "Mini Bag.png",
+    "image": "Mini-Bag.png",
     "description": "Travel light, travel far",
     "link": "./HTML Files/miniBags.html",
     "class": "mini-bags"
@@ -50,7 +50,7 @@
   },  
   {
     "title": "Handkerchiefs",
-    "image": "Chief-Main.jpeg",
+    "image": "Chief-Main.png",
     "description": "Lacy, trendy, always handy",
     "link": "./HTML Files/handkerchiefs.html",
     "class": "handkerchiefs"
