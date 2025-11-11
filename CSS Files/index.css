@@ -153,6 +153,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  line-clamp: 4;
   -webkit-line-clamp: 4; /* adjust line count as needed */
   -webkit-box-orient: vertical;
 }
@@ -485,3 +486,4 @@ a, a * {
     font-size: 10px;
   }
 }
+ 
